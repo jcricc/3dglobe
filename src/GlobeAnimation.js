@@ -11,7 +11,7 @@ const Globe = () => {
     <mesh ref={mesh}>
       <sphereGeometry ref={[5, 32, 32]} />
       <meshStandardMaterial color="royalblue" />
-      {/* Expand with interactive hotspots */}
+      {}
     </mesh>
   );
 };
@@ -23,7 +23,10 @@ const FloatingIcon = ({ position, icon }) => {
   return (
     <mesh ref={position} material={material}>
       <planeGeometry args={[1, 1]} />
-      {/* Customize with specific icons */}
+      <meshBasicMaterial color="white" transparent opacity={0.8} />
+      <sprite position={[0, 0, 0]} scale={[1, 1, 1]}>
+        <spriteMaterial attach="material" map={texture} />
+      </sprite>
     </mesh>
   );
 };
