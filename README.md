@@ -65,9 +65,7 @@ These dependencies are necessary for rendering the 3D globe and its interactive 
 
 No additional configuration is needed to start using "3D Globe" beyond the standard React project setup and installing the dependencies listed above.
 
-## Documentation
 
-Currently, the primary documentation for this project is the source code itself. Further documentation on extending and integrating the globe will be provided in future updates.
 
 ## Examples
 
