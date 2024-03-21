@@ -1,44 +1,18 @@
-.App-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  background-color: #282c34;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.Hero {
+  height: 90vh; /* Adjust height as needed */
+  position: relative;
 }
 
-.logo {
-  font-size: 1.8em;
-  font-weight: bold;
+.Hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.nav-links {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-links li {
-  display: inline-block;
-  padding: 0 15px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #4d90fe; /* Or any color that matches your branding */
-}
-
-.hero-section {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
+.Hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 

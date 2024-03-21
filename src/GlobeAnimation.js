@@ -1,38 +1,30 @@
 import React, { useRef } from 'react';
-import { Canvas, useLoader } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { Stars, OrbitControls } from '@react-three/drei';
-import { TextureLoader } from 'three';
-import PropTypes from 'prop-types';
+import { TextureLoader, MeshBasicMaterial } from 'three';
 
 const Globe = () => {
   const mesh = useRef(null);
 
-  // Use the useLoader hook to load the globe texture
-  const globeTexture = useLoader(TextureLoader, '/public/logo512.png');
-
   return (
     <mesh ref={mesh}>
-      {/* Use SphereGeometry for the geometry */}
-      <sphereGeometry args={[1, 32, 32]} />
-      {/* Use MeshStandardMaterial for the material, with the globe texture as the map */}
-      <meshStandardMaterial map={globeTexture} />
+      <sphereGeometry args={[5, 32, 32]} />
+      <meshStandardMaterial color="royalblue" />
+      {/* Expand with interactive hotspots */}
     </mesh>
   );
 };
 
 const FloatingIcon = ({ position, icon }) => {
-  const texture = useLoader(TextureLoader, icon);
+  const texture = new TextureLoader().load(icon);
+  const material = new MeshBasicMaterial({ map: texture });
 
   return (
-    <sprite position={position}>
-      <spriteMaterial attach="material" map={texture} />
-    </sprite>
+    <mesh position={position} material={material}>
+      <planeGeometry args={[1, 1]} />
+      {/* Customize with specific icons */}
+    </mesh>
   );
-};
-
-FloatingIcon.propTypes = {
-  position: PropTypes.array.isRequired,
-  icon: PropTypes.string.isRequired,
 };
 
 const GlobeAnimation = () => {
@@ -42,10 +34,10 @@ const GlobeAnimation = () => {
       <Stars />
       <Globe />
       {/* Example Icon - replace with actual icons and positions */}
-      <FloatingIcon position={[5, 0, 0]} icon="/public/logo192.png" />
+      <FloatingIcon position={[5, 0, 0]} icon="/path/to/icon.jpg" />
       <OrbitControls />
     </Canvas>
   );
 };
 
-export default GlobeAnimation;
+export default GlobeAnimation
