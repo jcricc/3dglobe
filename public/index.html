@@ -5,11 +5,11 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#282c34" />
-  <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" /> <!-- Optional: For additional global styles -->
+  <link rel="stylesheet" href="/App.css" /> <!-- Optional: For additional global styles -->
   <title>OctInk - Explore the World of Web3</title>
 </head>
 <body>
-  <div id="root-3dglobe"></div>
+  <div type="module" id="root"></div>
 
   <!-- Include your bundled scripts here -->
   <script src="/static/js/bundle.js"></script>
@@ -18,8 +18,15 @@
   <script src="https://cdn.jsdelivr.net/npm/three@0.124/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/loaders/GLTFLoader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/controls/OrbitControls.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/loaders/RGBELoader.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/renderers/CSS2DRenderer.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/renderers/Projector.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/loaders/DRACOLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/animation/CCDIKSolver.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/animation/MMDPhysics.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/animation/MMDAnimationHelper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/loaders/MD2Loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/loaders/AssimpJSONLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/loaders/ColladaLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/loaders/PLYLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/examples/js/loaders/STLLoader.js"></script>
+  
 </body>
 </html>

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useLoader } from '@react-three/fiber';
 import { Stars, OrbitControls } from '@react-three/drei';
 import { TextureLoader } from 'three';
 import PropTypes from 'prop-types';
@@ -7,9 +7,8 @@ import PropTypes from 'prop-types';
 const Globe = () => {
   const mesh = useRef(null);
 
-  // Create a texture loader to load the globe texture
-  const textureLoader = new TextureLoader();
-  const globeTexture = textureLoader.load('/public/logo512.png');
+  // Use the useLoader hook to load the globe texture
+  const globeTexture = useLoader(TextureLoader, '/public/logo512.png');
 
   return (
     <mesh ref={mesh}>
@@ -22,7 +21,7 @@ const Globe = () => {
 };
 
 const FloatingIcon = ({ position, icon }) => {
-  const texture = new TextureLoader().load(icon);
+  const texture = useLoader(TextureLoader, icon);
 
   return (
     <sprite position={position}>
