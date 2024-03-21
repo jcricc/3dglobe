@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  
   "dependencies": {
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.15.19",
