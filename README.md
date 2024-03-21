@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+```markdown
+# 3D Globe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+"3D Globe" is an interactive, scrollable map that provides a beautiful rotation effect, making it a perfect addition to any web3 or modern web project. Built using React and the powerful `@react-three/fiber` library for 3D rendering, along with `@react-three/drei` for convenient React abstractions over three.js objects, this project offers an engaging user experience with its visually appealing globe and floating icons.
 
-In the project directory, you can run:
+[![Preview](public/Screenshot 2024-03-20 233623.png)](https://www.youtube.com/watch?v=7t6wPBXQ3Fs)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Configuration](#configuration)
+- [Documentation](#documentation)
+- [Examples](#examples)
+- [Troubleshooting](#troubleshooting)
+- [Contributors](#contributors)
+- [License](#license)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To use "3D Globe" in your project, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Ensure you have Node.js installed on your system.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory and run `npm install` to install all required dependencies.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To incorporate the "3D Globe" into your React project, simply import `GlobeAnimation` from the component file and use it like any other React component:
 
-### `npm run eject`
+```jsx
+import React from 'react';
+import GlobeAnimation from './path/to/GlobeAnimation';
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+function App() {
+  return (
+    <div>
+      <GlobeAnimation />
+    </div>
+  );
+}
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+export default App;
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Interactive 3D Globe:** Offers a visually stunning representation of a globe that users can interact with.
+- **Customizable Icons:** Easily add and customize icons to float around the globe.
+- **Orbit Controls:** Allows users to control the camera view around the globe, enhancing interactivity.
 
-## Learn More
+## Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React
+- @react-three/fiber
+- @react-three/drei
+- three
+- PropTypes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+These dependencies are necessary for rendering the 3D globe and its interactive elements.
 
-### Code Splitting
+## Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+No additional configuration is needed to start using "3D Globe" beyond the standard React project setup and installing the dependencies listed above.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Examples
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The provided code snippet demonstrates the basic setup of the "3D Globe" component within a React application. For more advanced use cases, such as customizing icons or adjusting the globe's properties, refer to the Three.js and `@react-three/fiber` documentation.
 
-### Advanced Configuration
+## Troubleshooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+For any issues or problems encountered while setting up or using "3D Globe", please open an issue on the GitHub repository page.
 
-### Deployment
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions to "3D Globe" are welcome! To contribute, please fork the repository, make your changes, and submit a pull request.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the LICENSE file in the GitHub repository for details.
+```
+
+This README provides a starting point for your "3D Globe" project. You can expand each section with more detailed information as your project grows.
