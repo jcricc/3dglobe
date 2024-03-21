@@ -5,6 +5,9 @@
 
 "3D Globe" is an interactive, scrollable map that provides a beautiful rotation effect, making it a perfect addition to any web3 or modern web project. Built using React and the powerful `@react-three/fiber` library for 3D rendering, along with `@react-three/drei` for convenient React abstractions over three.js objects, this project offers an engaging user experience with its visually appealing globe and floating icons.
 
+[![Preview]([https://img.youtube.com/vi/YOUR_VIDEO_ID](https://youtu.be/7t6wPBXQ3Fs)/0.jpg)]([http://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://youtu.be/7t6wPBXQ3Fs))
+
+
 ## Table of Contents
 
 - [Installation](#installation)
