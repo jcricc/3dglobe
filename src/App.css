@@ -1,18 +1,11 @@
-.Hero {
-  height: 90vh; /* Adjust height as needed */
-  position: relative;
-}
-
-.Hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* src/App.css */
+.App {
   text-align: center;
 }
 
-.Hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+.Hero {
+  height: 80vh; /* Adjust hero space as needed */
+  position: relative;
+  background: #282c34;
 }
 
