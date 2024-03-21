@@ -4,7 +4,7 @@
 }
 
 .Hero {
-  height: 80vh; /* Adjust hero space as needed */
+  height: 100vh; /* Adjust hero space as needed */
   position: relative;
   background: #282c34;
 }
